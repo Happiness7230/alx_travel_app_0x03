@@ -31,3 +31,13 @@ def send_payment_confirmation_email(payment_id):
         fail_silently=False,
     )
     return True
+
+@shared_task
+def send_booking_confirmation_email(user_email, booking_details):
+    subject = "Booking Confirmation - ALX Travel App"
+    message = f"Dear user,\n\nYour booking has been confirmed.\n\nDetails:\n{booking_details}\n\nThank you for choosing us!"
+    from_email = settings.DEFAULT_FROM_EMAIL
+    recipient_list = [user_email]
+
+    send_mail(subject, message, from_email, recipient_list)
+    return f"Email sent to {user_email}"
