@@ -26,7 +26,7 @@ CHAPA_SECRET_KEY = os.environ.get("CHAPA_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alx-travel-app-0x03-xfmc.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
