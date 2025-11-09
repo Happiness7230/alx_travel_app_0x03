@@ -9,8 +9,6 @@ billiard==3.6.1.0
 blinker==1.4
 Brlapi==0.7.0
 cached-property==1.5.1
-celery==4.2.1
-certifi==2019.11.28
 cffi==1.17.1
 channels==4.2.2
 channels-redis==4.2.1
