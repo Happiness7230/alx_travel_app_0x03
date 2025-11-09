@@ -18,7 +18,6 @@ chardet==3.0.4
 billiard==4.2.2
 celery==5.5.3
 certifi==2025.10.5
->>>>>>> a23f2b96150b34e8814430e916096926e22977d2
 charset-normalizer==3.4.4
 Click==7.0
 colorama==0.4.3
